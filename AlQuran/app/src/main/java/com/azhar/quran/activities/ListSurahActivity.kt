@@ -92,7 +92,7 @@ class ListSurahActivity : AppCompatActivity(), onSelectData {
         listSurah()
     }
 
-    private fun listSurah {
+    private fun listSurah() {
             progressDialog!!.show()
             AndroidNetworking.get(Api.URL_LIST_SURAH)
                     .setPriority(Priority.MEDIUM)

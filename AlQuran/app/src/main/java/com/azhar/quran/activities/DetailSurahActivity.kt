@@ -121,7 +121,7 @@ class DetailSurahActivity : AppCompatActivity() {
         listAyat()
     }
 
-    private fun listAyat {
+    private fun listAyat() {
             progressDialog!!.show()
             AndroidNetworking.get(Api.URL_LIST_AYAT)
                     .addPathParameter("nomor", nomor)
